@@ -1,4 +1,6 @@
 from Trees.binary_tree import Node, BinaryTree
+
+
 def delete(self, word):
         self.root = self._delete(self.root, word)
 
@@ -75,12 +77,9 @@ def build_dict_from_file(filename):
 def search_word_in_dict(word_dict, word):
     return word_dict.get(word, False)
 
-
 def search_word_in_file(filename, word):
     with open(filename, 'r') as file:
         for line in file:
             if word in line.split():
                 return True
     return False
-
-
